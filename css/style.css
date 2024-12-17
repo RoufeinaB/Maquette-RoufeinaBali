@@ -1,0 +1,113 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background-color: #FFD600;
+    color: rgb(0, 0, 0);
+    max-height: 70px;
+    margin: 0 auto;
+}
+nav h1 {
+    display: flex;
+    align-items: center;
+    font-size: 3rem;
+    font-family: "VT323", serif;
+    margin-left: 3rem;
+}
+nav h1 img {
+    height: 60px;
+    margin-right: 5px;
+}
+#menu {
+    display: flex;
+    flex: 1;
+    gap: 12rem;
+    justify-content: flex-end;
+    margin-right: 10rem;
+    font-family: "Poppins",sans-serif;
+    
+}
+#menu a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+#menu a:hover {
+    color: #ffffff;
+}
+header {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+#ImgdeFond {
+    display: block;
+    width: 100%;
+}
+#ImgdeFond img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+#TxtCentrale {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centre parfaitement */
+    text-align: center;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 2rem;
+}
+#TxtCentrale p {
+    margin: 0 0 2rem;
+    font-weight: 600;
+}
+#TxtCentrale button {
+    background-color: #ff0000;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    padding: 15px 75px;
+    font-weight: 600;
+    cursor: pointer;
+}
+#texte {
+    background-color: #1b1b1b;
+    padding: 20px;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    color: white;
+}
+#texte p {
+    margin: 0;
+    line-height: 1.5;
+    font-size: 25px;
+    word-spacing: 2px;
+}
+#collections {
+    text-align: left;
+    padding: 20px;
+    margin-left: 25px;
+}
+
+#collections h2 {
+    font-family: "Poppins",sans-serif;
+    font-size: 21px;
+}
+
+#collections img {
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
