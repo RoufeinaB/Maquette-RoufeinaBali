@@ -103,11 +103,55 @@ header {
 
 #collections h2 {
     font-family: "Poppins",sans-serif;
-    font-size: 21px;
+    font-size: 28px;
+}
+.menuCollections {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+}
+#audio {
+    padding: 20px;
+    margin-left: 25px;
+}
+#audio h2{
+    text-align: center;
+    font-family: "Poppins",sans-serif;
+    font-size: 28px;
+}
+.intAudio {
+    display: flex;
+    align-items: center;
+    background-color: #3b6ea5;
+    color: white;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+.imgInt {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+.txtint {
+    padding: 20px;
+    flex: 1;
 }
 
-#collections img {
-    height: auto;
-    border-radius: 10px;
-    transition: transform 0.3s ease;
+.txtint h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
 }
+
+.txtint p {
+    margin: 5px 0;
+}
+
+.txtint audio {
+    margin-top: 10px;
+    width: 70%;
+}
+
+/* Changer la police + espace entre */ 
