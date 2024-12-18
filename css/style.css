@@ -125,33 +125,156 @@ header {
     background-color: #3b6ea5;
     color: white;
     margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
 }
 .imgInt {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     object-fit: cover;
 }
 .txtint {
     padding: 20px;
     flex: 1;
+    margin-left: 30px;
 }
 
 .txtint h3 {
     margin: 0;
     font-size: 1.2rem;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .txtint p {
     margin: 5px 0;
+    margin-bottom: 20px;
+    font-family: "Poppins",sans-serif;
 }
 
 .txtint audio {
-    margin-top: 10px;
+    margin-top: 70px;
     width: 70%;
 }
 
-/* Changer la police + espace entre */ 
+.videos {
+    text-align: center;
+    margin: 50px auto;
+    padding: 0 20px;
+    font-family: "Poppins", sans-serif;
+}
+.videos h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+.intVideo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.Video1, .Video2 {
+    text-align: center;
+}
+.Video1 video{
+    width: 650px;
+    height: auto;
+}
+.Video2 video{
+    width: 650px;
+    height: 420px;
+    margin-bottom: 25px;
+}
+.Video1 h3{
+    font-size: 1.5rem;
+    margin-top: 10px;
+    font-weight: 600;
+}
+.Video2 h3{
+    font-size: 1.5rem;
+    margin-top: 10px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.artistes {
+    text-align: center;
+    margin: 50px auto;
+}
+
+.artistes h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-family: "Poppins", sans-serif;
+}
+
+.tbl-artistes {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+.tbl-artistes img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tbl-artistes img:hover {
+    transform: scale(1.05);
+}
+.Apropos {
+    text-align: center;
+    margin: 50px auto;
+}
+.Apropos h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-family: "Poppins", sans-serif;
+}
+.Apropos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.contenu h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.contenu img {
+    margin: 20px 0;
+    max-width: 100%;
+    height: auto;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    font-style: italic;
+    font-weight: bold;
+    color: #333;
+}
+
+.description {
+    font-size: 1rem;
+    color: #000000;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+/* Modifier la longueur du texte */ 
