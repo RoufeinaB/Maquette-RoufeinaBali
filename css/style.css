@@ -95,21 +95,60 @@ header {
     font-size: 25px;
     word-spacing: 2px;
 }
-#collections {
+#Collections {
     text-align: left;
     padding: 20px;
     margin-left: 25px;
 }
 
-#collections h2 {
-    font-family: "Poppins",sans-serif;
+#Collections h2 {
+    font-family: "Poppins", sans-serif;
     font-size: 28px;
 }
+
 .menuCollections {
     display: flex;
     justify-content: space-around;
     gap: 1rem;
 }
+.collection {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+}
+.collection img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+.collection:hover img {
+    transform: scale(1.1);
+}
+.collection .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.collection:hover .overlay {
+    opacity: 1;
+}
+
+/* Audio */ 
 #audio {
     padding: 20px;
     margin-left: 25px;
@@ -141,31 +180,27 @@ header {
     flex: 1;
     margin-left: 30px;
 }
-
 .txtint h3 {
     margin: 0;
     font-size: 1.2rem;
     margin-bottom: 20px;
 }
-
 .txtint p {
     margin: 5px 0;
     margin-bottom: 20px;
     font-family: "Poppins",sans-serif;
 }
-
 .txtint audio {
     margin-top: 70px;
     width: 70%;
 }
-
-.videos {
+#videos {
     text-align: center;
     margin: 50px auto;
     padding: 0 20px;
     font-family: "Poppins", sans-serif;
 }
-.videos h2 {
+#videos h2 {
     font-size: 28px;
     margin-bottom: 20px;
 }
@@ -199,11 +234,11 @@ header {
     font-weight: 600;
     margin-bottom: 30px;
 }
-.artistes {
+#artistes {
     text-align: center;
     margin: 50px auto;
 }
-.artistes h2 {
+#artistes h2 {
     font-size: 28px;
     margin-bottom: 20px;
     font-family: "Poppins", sans-serif;
@@ -225,16 +260,16 @@ header {
 .tbl-artistes img:hover {
     transform: scale(1.05);
 }
-.Apropos {
+#Apropos {
     text-align: center;
     margin: 50px auto;
 }
-.Apropos h2 {
+#Apropos h2 {
     font-size: 28px;
     margin-bottom: 20px;
     font-family: "Poppins", sans-serif;
 }
-.Apropos {
+#Apropos {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -265,3 +300,70 @@ h2 {
     margin: 0 auto;
     line-height: 1.5;
 }
+#Contact{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 350px;
+    margin-top: 100px;
+}
+.contact-form {
+    background-color: #195191;
+    color: white;
+    padding: 20px 70px;
+    text-align: center;
+    width: 60%;
+}
+.contact-form h1 {
+    font-size: 28px;
+}
+.contact-form p {
+    font-size: 16px;
+}
+.contact-form label {
+    display: block;
+    text-align: left;
+    margin: 10px 0 5px;
+    font-size: 14px;
+    font-weight: bold;
+    transform: translateX(8%);
+}
+.contact-form input, 
+.contact-form textarea {
+    display: block;
+    padding: 10px;
+    width: 70%;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    margin: 10px;
+    transform: translateX(10%);
+}
+.contact-form button {
+    background-color: #D32F2F;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 30%;
+    transition: background-color 0.3s;
+}
+.contact-form button:hover {
+    background-color: #921a1a;
+}
+footer {
+    margin-top: 100px;
+    background-color: #ffd700;
+    text-align: center;
+    padding: 10px;
+}
+footer p {
+    margin: 10px;
+    font-family: "VT323", serif;
+    color: black;
+    font-weight: bold;
+    font-size: 3rem;
+}  

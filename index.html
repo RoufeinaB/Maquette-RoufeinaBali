@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
-
         <meta charset="utf-8">
         <meta name="description" content="Projet final - Maquette">
         <meta name="Author" content="Crée par Roufeina Bali">
@@ -11,7 +10,6 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=VT323&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
-
     </head>
     <body>
         <nav>
@@ -20,9 +18,9 @@
                 SongUniverse
             </h1>
             <div id="menu">
-                <a href=#collections>COLLECTIONS</a>
-                <a href="redirection2">A PROPOS</a>
-                <a href="redirection3">CONTACTEZ-NOUS</a>
+                <a href=#Collections>COLLECTIONS</a>
+                <a href="#Apropos">A PROPOS</a>
+                <a href="#Contact">CONTACTEZ-NOUS</a>
             </div>
         </nav>
         <header>
@@ -40,19 +38,26 @@
                 </p>
             </div>
         </header>
-        <body>
-            <section id="collections">
+        <main>
+            <section id="Collections">
                 <H2> COLLECTIONS </H2>
                 <div class="menuCollections">
-                    <img src="photos/collection-audio.png" alt="Headphones">
-                    <img src="photos/collection-video.png" alt="Video">
-                    <img src="photos/collection-artiste.png" alt="DJ">
+                    <div class="collection">
+                        <img src="photos/collection-audio.png" alt="image d'un casque Audio crée par IA">
+                        <a href="#audio" class="overlay">Audio</a>
+                    </div>
+                    <div class="collection">
+                        <img src="photos/collection-video.png" alt="Image d'une table de mixage crée par IA">
+                        <a href="#videos" class="overlay">Video</a>
+                    </div>
+                    <div class="collection">
+                        <img src="photos/collection-artiste.png" alt="DJ crée par une IA ">
+                        <a href="#artistes" class="overlay">Artistes</a>
+                    </div>
                 </div>
-                <!-- Ajouter les redirections + effect texte au passage de la sourie-->
             </section>
             <section id="audio">
                 <h2>AUDIOS</h2>
-
                 <div class="intAudio">
                     <img class="imgInt" src="photos/audio1.png" alt="Cover avec 2 paons générée par IA">
                     <div class="txtint">
@@ -89,7 +94,7 @@
                     </div>
                 </div>
             </section>
-            <section class="videos">
+            <section id="videos">
                 <h2>VIDEO</h2>
                 <div class="intVideo">
                     <div class="Video1">
@@ -106,24 +111,48 @@
                     </div>
                 </div>
             </section>
-            <section class="artistes">
+            <section id="artistes">
                 <h2>ARTISTES</h2>
                 <div class="tbl-artistes">
-                    <img src="photos/artiste12.png" alt="Nuage coloré générée par IA ">
-                    <img src="photos/artiste10.png" alt="Dj dans l'espace générée par IA ">
-                    <img src="photos/artiste8.png" alt="Fond bleu générée par IA">
-                    <img src="photos/artiste9.png" alt="Ours polaire avec un casque générée IA">
-                    <img src="photos/artiste5.png" alt="Fond bleu et rose générée par IA ">
-                    <img src="photos/artiste11.png" alt="Sablier générée par IA">
-                    <img src="photos/artiste3.png" alt="Chat énerver avec lunette">
-                    <img src="photos/artiste4.png" alt="Femme">
-                    <img src="photos/artiste2.png" alt="Image 9">
-                    <img src="photos/artiste7.png" alt="Image 10">
-                    <img src="photos/artiste6.png" alt="Image 10">
-                    <img src="photos/artiste1.png" alt="Image 10">
+                    <a href="https://site-artiste12.com" target="_blank" title="Visiter le site de l'artiste 12">
+                        <img src="photos/artiste12.png" alt="Nuage coloré générée par IA ">
+                    </a>
+                    <a href="https://site-artiste10.com" target="_blank" title="Visiter le site de l'artiste 10">
+                        <img src="photos/artiste10.png" alt="Dj dans l'espace générée par IA ">
+                    </a>
+                    <a href="https://site-artiste8.com" target="_blank" title="Visiter le site de l'artiste 8">
+                        <img src="photos/artiste8.png" alt="Fond bleu générée par IA">
+                    </a>
+                    <a href="https://site-artiste9.com" target="_blank" title="Visiter le site de l'artiste 9">
+                        <img src="photos/artiste9.png" alt="Ours polaire avec un casque générée IA">
+                    </a>
+                    <a href="https://site-artiste5.com" target="_blank" title="Visiter le site de l'artiste 5">
+                        <img src="photos/artiste5.png" alt="Fond bleu et rose générée par IA ">
+                    </a>
+                    <a href="https://site-artiste11.com" target="_blank" title="Visiter le site de l'artiste 11">
+                        <img src="photos/artiste11.png" alt="Sablier générée par IA">
+                    </a>
+                    <a href="https://site-artiste3.com" target="_blank" title="Visiter le site de l'artiste 3">
+                        <img src="photos/artiste3.png" alt="Chat énerver avec lunette générée par IA">
+                    </a>
+                    <a href="https://site-artiste4.com" target="_blank" title="Visiter le site de l'artiste 4">
+                        <img src="photos/artiste4.png" alt="Femme zombie générée par IA">
+                    </a>
+                    <a href="https://site-artiste2.com" target="_blank" title="Visiter le site de l'artiste 2">
+                        <img src="photos/artiste2.png" alt="Fond bleu avec écris Teste di Serie générée par IA">
+                    </a>
+                    <a href="https://site-artiste7.com" target="_blank" title="Visiter le site de l'artiste 7">
+                        <img src="photos/artiste7.png" alt="Un chat qui observe un papillon proche d'une fenêtre générée par IA">
+                    </a>
+                    <a href="https://site-artiste6.com" target="_blank" title="Visiter le site de l'artiste 6">
+                        <img src="photos/artiste6.png" alt="Panda minion générée par IA">
+                    </a>
+                    <a href="https://site-artiste1.com" target="_blank" title="Visiter le site de l'artiste 1">
+                        <img src="photos/artiste1.png" alt="Fond Rose et vert générée par IA">
+                    </a>
                 </div>
             </section>
-            <section class="Apropos"> 
+            <section id="Apropos"> 
                 <div class="contenu">
                     <h1>A PROPOS</h1>
                     <img src="photos/about-us.png" alt="Dessin d'une femme et d'un homme crée par IA" />
@@ -134,6 +163,27 @@
                     </p>
                 </div>
             </section>
-        </body>
+            <section id="Contact">
+                <div class="contact-form">
+                    <h1>CONTACTEZ-NOUS</h1>
+                    <p>Vous souhaitez contribuer à cette plateforme ?<br>Envoyez-nous un message ou une musique !</p>
+                    <form action="#" method="post" enctype="multipart/form-data">
+                      <label for="email">Email</label>
+                      <input type="email" id="email" name="email" required>
+                      
+                      <label for="message">Message</label>
+                      <textarea id="message" name="message" rows="5" required></textarea>
+                      
+                      <label for="file">Envoyer une musique (optionnel)</label>
+                      <input type="file" id="file" name="file" accept="audio/*">
+                      
+                      <button type="submit">Envoyer</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>Copyright SongUniverse</p>
+        </footer>  
     </body>
 </html>
