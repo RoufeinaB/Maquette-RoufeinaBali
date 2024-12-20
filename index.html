@@ -1,36 +1,36 @@
 <!DOCTYPE html>
-<html lang="fr">
-    <head>
-        <meta charset="utf-8">
-        <meta name="description" content="Projet final - Maquette">
-        <meta name="Author" content="Crée par Roufeina Bali">
-        <link rel="stylesheet" href="css/style.css">
-        <title>SongUniverse</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
+<html lang="fr"> <!--Langue de la page-->
+    <head> <!--En-tête de la page-->
+        <meta charset="utf-8"> <!--Encodage de la page-->
+        <meta name="description" content="Projet final - Maquette"> <!--Description de la page-->
+        <meta name="Author" content="Crée par Roufeina Bali"> <!--Auteur de la page-->
+        <link rel="stylesheet" href="css/style.css"> <!--Lien vers le fichier css-->
+        <title>SongUniverse</title> <!--Titre de la page-->  
+        <link rel="preconnect" href="https://fonts.googleapis.com"> <!--Lien vers la police d'écriture-->
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=VT323&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
     </head>
-    <body>
-        <nav>
-            <h1>
+    <body> <!--Corps de la page-->
+        <nav>   <!--Barre de navigation-->
+            <h1> <!--Titre principal -->
                 <img src="photos/logo.svg" alt="Une guitare qui correspond au logo de SongUniverse">
-                SongUniverse
+                SongUniverse <!-- img src = permet d'ajouter une image et le alt rend notre site accesible-->
             </h1>
-            <div id="menu">²²²²
-                <p id="fakebutton">☰</p>
-                <a href=#Collections>COLLECTIONS</a>
+            <div id="menu"> <!--Menu de navigation-->
+                <p id="fakebutton">☰</p> <!--On peut remplacer ceci par un button et utiliser le JS mais au vue du sujet cela à étais modifier pour vous donner le visuel demander mais pas la fonction forcément -->
+                <a href=#Collections>COLLECTIONS</a> <!-- a href = redirection -->
                 <a href="#Apropos">A PROPOS</a>
                 <a href="#Contact">CONTACTEZ-NOUS</a>
             </div>
         </nav>
-        <header>
-            <div id="ImgdeFond">
+        <header>  <!-- Partie du haut de la page -->
+            <div id="ImgdeFond"><!-- div = permet de créer une division -->
                 <img src="photos/cover.png" alt="image de fond d'une table de mixage">
             </div>
             <div id="TxtCentrale">
-                <p>Explorez un univers sonore générée par l'IA</p>
-                <button> Explorez </button>
+                <p>Explorez un univers sonore générée par l'IA</p> <!-- p = permet de créer un paragraphe -->
+                <button> Explorez </button> <!-- button = permet de créer un bouton -->
             </div>
             <div id="texte">
                 <p>
@@ -39,9 +39,9 @@
                 </p>
             </div>
         </header>
-        <main>
-            <section id="Collections">
-                <H2> COLLECTIONS </H2>
+        <main>  <!-- Partie principale de la page -->
+            <section id="Collections">  <!-- Section pour mieux divisier les parties : Collections-->
+                <H2> COLLECTIONS </H2> <!-- H2 = permet de créer un titre de niveau 2 -->    
                 <div class="menuCollections">
                     <div class="collection">
                         <img src="photos/collection-audio.png" alt="image d'un casque Audio crée par IA">
@@ -57,7 +57,7 @@
                     </div>
                 </div>
             </section>
-            <section id="audio">
+            <section id="audio"> <!-- Section pour l'audio-->
                 <h2>AUDIOS</h2>
                 <div class="intAudio">
                     <img class="imgInt" src="photos/audio1.png" alt="Cover avec 2 paons générée par IA">
@@ -66,7 +66,7 @@
                         <p>Style : #carnatic</p>
                         <p>Artiste : Леонід Українець</p>
                         <audio controls>
-                            <source src="audios/audio1.mp3" type="audio/mp3">
+                            <source src="audios/audio1.mp3" type="audio/mp3"> <!-- source = permet de lier un fichier audio -->
                         </audio>
                     </div>
                 </div>
@@ -93,12 +93,12 @@
                     </div>
                 </div>
             </section>
-            <section id="videos">
+            <section id="videos">   <!-- Section pour les vidéos-->
                 <h2>VIDEOS</h2>
-                <div class="intVideo">
+                <div id="intVideo">
                     <div class="Video1">
-                        <video class="Video1" controls>
-                            <source src="videos/loficity.mp4" type="video/mp4">
+                        <video class="Video1" controls> <!-- controls = permet d'ajouter des contrôles à la vidéo -->
+                            <source src="videos/loficity.mp4" type="video/mp4"> <!-- source = permet de lier un fichier vidéo -->
                         </video>
                         <h3>LOFICITY</h3>
                     </div>
@@ -110,10 +110,10 @@
                     </div>
                 </div>
             </section>
-            <section id="artistes">
+            <section id="artistes"> <!-- Section pour les artistes-->
                 <h2>ARTISTES</h2>
                 <div class="tbl-artistes">
-                    <a href="https://suno.com/@31ewhipple" target="_blank" title="Visiter le site de l'artiste @31ewhipple">
+                    <a href="https://suno.com/@31ewhipple" target="_blank" title="Visiter le site de l'artiste @31ewhipple"> <!-- target="_blank" = permet d'ouvrir le lien dans un nouvel onglet -->
                         <img src="photos/artiste12.png" alt="Nuage coloré générée par IA ">
                     </a>
                     <a href="https://suno.com/@forrestdome2000" target="_blank" title="Visiter le site de l'artiste @forrestdome2000">
@@ -151,7 +151,7 @@
                     </a>
                 </div>
             </section>
-            <section id="Apropos"> 
+            <section id="Apropos">  <!-- Section pour l'apropos-->
                 <div class="contenu">
                     <h1>A PROPOS</h1>
                     <img src="photos/about-us.png" alt="Dessin d'une femme et d'un homme crée par IA" />
@@ -162,26 +162,26 @@
                     </p>
                 </div>
             </section>
-            <section id="Contact">
+            <section id="Contact"> <!-- Section pour le contact-->
                 <div class="contact-form">
                     <h1>CONTACTEZ-NOUS</h1>
                     <p>Vous souhaitez contribuer à cette plateforme ?<br>Envoyez-nous un message ou une musique !</p>
-                    <form action="#" method="post" enctype="multipart/form-data">
-                      <label for="email">Email</label>
-                      <input type="email" id="email" name="email" required>
+                    <form action="#" method="post" enctype="multipart/form-data"> <!-- action = permet de définir l'URL de destination des données du formulaire -->
+                      <label for="email">Email</label> <!-- label = permet de créer un label pour un champ de formulaire -->
+                      <input type="email" id="email" name="email" required>  <!-- input = permet de créer un champ de formulaire -->
                       
                       <label for="message">Message</label>
-                      <textarea id="message" name="message" rows="5" required></textarea>
+                      <textarea id="message" name="message" rows="5" required></textarea> <!-- textarea = permet de créer un champ de formulaire pour les messages -->
                       
-                      <label for="file">Envoyer une musique (optionnel)</label>
+                      <label for="file">Envoyer une musique (optionnel)</label> 
                       <input type="file" id="file" name="file" accept="audio/*">
                       
-                      <button type="submit">Envoyer</button>
+                      <button type="submit">Envoyer</button> 
                     </form>
                 </div>
             </section>
         </main>
-        <footer>
+        <footer> <!-- Bas de la page -->
             <p>Copyright SongUniverse</p>
         </footer>  
     </body>
