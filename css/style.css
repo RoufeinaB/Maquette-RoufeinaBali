@@ -1,4 +1,4 @@
-body{
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -16,22 +16,21 @@ nav {
 nav h1 {
     display: flex;
     align-items: center;
-    font-size: 3rem;
     font-family: "VT323", serif;
-    margin-left: 3rem;
+    font-size: 3rem;
+    margin-left: 3rem; 
 }
 nav h1 img {
-    height: 60px;
+    height: 50px;
     margin-right: 5px;
 }
 #menu {
     display: flex;
-    flex: 1;
+    flex: 1; 
     gap: 12rem;
-    justify-content: flex-end;
     margin-right: 10rem;
+    justify-content: flex-end;
     font-family: "Poppins",sans-serif;
-    
 }
 #menu a {
     color: rgb(0, 0, 0);
@@ -42,6 +41,9 @@ nav h1 img {
 }
 #menu a:hover {
     color: #ffffff;
+}
+#fakebutton {
+    display: none;
 }
 header {
     position: relative;
@@ -61,7 +63,7 @@ header {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); /* Centre parfaitement */
+    transform: translate(-50%, -50%);
     text-align: center;
     color: white;
     font-family: "Poppins", sans-serif;
@@ -98,14 +100,12 @@ header {
 #Collections {
     text-align: left;
     padding: 20px;
-    margin-left: 25px;
+    margin-left: 25px
 }
-
 #Collections h2 {
     font-family: "Poppins", sans-serif;
     font-size: 28px;
 }
-
 .menuCollections {
     display: flex;
     justify-content: space-around;
@@ -113,8 +113,8 @@ header {
 }
 .collection {
     position: relative;
-    width: 400px;
-    height: 400px;
+    width: 70%;
+    height: auto;
     overflow: hidden;
 }
 .collection img {
@@ -230,7 +230,6 @@ header {
     font-size: 1.5rem;
     margin-top: 10px;
     font-weight: 600;
-    margin-bottom: 30px;
 }
 #artistes {
     text-align: center;
@@ -364,4 +363,97 @@ footer p {
     color: black;
     font-weight: bold;
     font-size: 3rem;
-}  
+}
+
+/* Media Queries pour téléphone */
+@media (max-width: 768px) {
+    nav h1 {
+        font-size: 2.5rem;
+    }
+    nav h1 img {
+        height: 60px;
+    }
+    #menu a {
+        display: none;
+    }
+    #fakebutton {
+        display: block;
+        font-size: 3rem;
+        font-weight: bold;
+        margin-left: 9rem;
+    }
+    #ImgdeFond img {
+        height: 60vh;
+    }
+    #TxtCentrale {
+        height: 60vh;
+        font-size: 2.2rem;
+    }
+    #TxtCentrale button {
+        font-size: 1.2rem;
+        width: 100%;
+    }
+    .contenu h1,#artistes h2,#Apropos h2,#videos h2,#Collections h2,#audio h2 {
+        font-size: 50px;
+    }
+    #Collections .menuCollections {
+        flex-direction: column;
+    }
+    .collection {
+        width: 100%;
+        height: auto;
+    }
+    .intAudio {
+        flex-direction: column;
+        align-items: start;
+    }
+    .txtint h3 {
+        margin-top: 30px;
+        font-size: 50px;
+    }
+    .txtint p {
+        font-size: 30px;
+    }
+    .txtint audio {
+        width: 350px;
+    }
+    .imgInt {
+        width: 100%;
+        height: 400px;
+    }
+    .txtint h3 {
+        font-size: 30px;
+    }
+    .Video1 video,.Video2 video {
+        width: 100%;
+        height: auto;
+    }
+    .Video2 h3,.Video1 h3 {
+        font-size: 40px ;
+    }
+    .tbl-artistes {
+        width: 80%;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    .contenu img {
+        width: 80%;
+        height: auto;
+    }
+    .description {
+        font-size: 20px;
+        font-weight: bold;
+        width: 60%;
+        line-height: 1.2;
+    }
+    .contact-form p {
+    font-size: 13px;
+    margin-bottom: 30px;
+    margin-top: -10px;
+    }
+
+    footer p {
+    font-size: 5rem;
+    }
+}
+
