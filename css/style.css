@@ -106,7 +106,7 @@ header {
     font-family: "Poppins", sans-serif;
     font-size: 28px;
 }
-.menuCollections {
+#menuCollections {
     display: flex;
     justify-content: space-around;
     gap: 1rem;
@@ -240,7 +240,7 @@ header {
     margin-bottom: 20px;
     font-family: "Poppins", sans-serif;
 }
-.tbl-artistes {
+#tbl-artistes {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     gap: 20px;
@@ -249,12 +249,12 @@ header {
     max-width: 1320px;
     margin: 0 auto;
 }
-.tbl-artistes img {
+#tbl-artistes img {
     width: 100%;
     height: auto;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.tbl-artistes img:hover {
+#tbl-artistes img:hover {
     transform: scale(1.05);
 }
 #Apropos {
@@ -274,13 +274,13 @@ header {
     text-align: center;
     background-color: #fff;
 }
-.contenu h1 {
+#contenu h1 {
     font-size: 2rem;
     margin-bottom: 1rem;
     text-transform: uppercase;
     color: #000;
 }
-.contenu img {
+#contenu img {
     margin: 0;
     width: 1000px;
     height: 500px;
@@ -291,7 +291,7 @@ h2 {
     font-weight: bold;
     color: #000000;
 }
-.description {
+#description {
     font-size: 18px;
     color: #000000;
     margin: 0 auto;
@@ -306,20 +306,20 @@ h2 {
     min-height: 350px;
     margin-top: 100px;
 }
-.contact-form {
+#contact-form {
     background-color: #235789;
     color: white;
     padding: 20px 70px;
     text-align: center;
     width: 60%;
 }
-.contact-form h1 {
+#contact-form h1 {
     font-size: 28px;
 }
-.contact-form p {
+#contact-form p {
     font-size: 16px;
 }
-.contact-form label {
+#contact-form label {
     display: block;
     text-align: left;
     margin: 10px 0 5px;
@@ -327,8 +327,8 @@ h2 {
     font-weight: bold;
     transform: translateX(8%);
 }
-.contact-form input, 
-.contact-form textarea {
+#contact-form input, 
+#contact-form textarea {
     display: block;
     padding: 10px;
     width: 70%;
@@ -338,7 +338,7 @@ h2 {
     margin: 10px;
     transform: translateX(10%);
 }
-.contact-form button {
+#contact-form button {
     background-color: #D32F2F;
     color: white;
     border: none;
@@ -348,7 +348,7 @@ h2 {
     width: 30%;
     transition: background-color 0.3s;
 }
-.contact-form button:hover {
+#contact-form button:hover {
     background-color: #921a1a;
 }
 footer {
@@ -393,7 +393,7 @@ footer p {
         font-size: 1.2rem;
         width: 100%;
     }
-    .contenu h1,#artistes h2,#Apropos h2,#videos h2,#Collections h2,#audio h2 {
+    #contenu h1,#artistes h2,#Apropos h2,#videos h2,#Collections h2,#audio h2 {
         font-size: 50px;
     }
     #Collections .menuCollections {
@@ -431,16 +431,16 @@ footer p {
     .Video2 h3,.Video1 h3 {
         font-size: 40px ;
     }
-    .tbl-artistes {
+    #tbl-artistes {
         width: 80%;
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
     }
-    .contenu img {
+    #contenu img {
         width: 80%;
         height: auto;
     }
-    .description {
+    #description {
         font-size: 20px;
         font-weight: bold;
         width: 60%;
